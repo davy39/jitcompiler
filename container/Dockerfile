@@ -104,8 +104,8 @@ RUN cp -r ~/.deno /home/compiler
 RUN echo 'export DENO_INSTALL="$HOME/.deno"' >> /home/compiler/.bashrc
 RUN echo 'export PATH="$DENO_INSTALL/bin:$PATH"' >> /home/compiler/.bashrc
 # Install erlang
-ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get install erlang -y
+#ARG DEBIAN_FRONTEND=noninteractive
+#RUN apt-get install erlang -y
 # Install elixir
 RUN apt-get install elixir -y
 # Install lisp
